@@ -1,0 +1,148 @@
+<div class="page-shell">
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark">N</span>
+      <span>
+        <strong>Nomadifly</strong>
+        <small>Bhutan Journeys</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#guide">Travel Guide</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">⌕</button>
+      <button class="icon-btn" aria-label="Wishlist">♡</button>
+      <a class="plan-btn" href="#planner">Plan My Trip</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Luxury • Authentic • Tailored</p>
+        <h1>Discover the Hidden Kingdom of Bhutan</h1>
+        <p class="hero-copy">
+          Curated monasteries, Himalayan landscapes, and deeply personal journeys designed by local experts.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#experiences">Explore Tours</a>
+          <a class="secondary-btn" href="#planner">Create Custom Journey</a>
+        </div>
+        <div class="trust-row" aria-label="Trusted by travelers">
+          <span>Government Licensed</span>
+          <span>Local Bhutan Experts</span>
+          <span>Secure Payments</span>
+          <span>24×7 Support</span>
+        </div>
+      </div>
+      <div class="hero-stats" aria-label="Nomadifly highlights">
+        <div>
+          <strong>98%</strong>
+          <span>Repeat Guests</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span>Concierge Support</span>
+        </div>
+        <div>
+          <strong>12+</strong>
+          <span>Signature Journeys</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="planner" class="planner-section">
+      <div class="section-heading">
+        <p class="eyebrow">AI Trip Planner</p>
+        <h2>Craft your ideal Bhutan escape in minutes</h2>
+      </div>
+      <div class="planner-card">
+        <div class="planner-form">
+          <label>
+            Arrival Country
+            <input type="text" value="India" />
+          </label>
+          <label>
+            Travel Dates
+            <input type="text" value="October 2026" />
+          </label>
+          <label>
+            Travelers
+            <input type="text" value="2 Guests" />
+          </label>
+          <label>
+            Budget
+            <input type="text" value="Luxury" />
+          </label>
+          <label>
+            Travel Style
+            <input type="text" value="Culture + Wellness" />
+          </label>
+          <label>
+            Interests
+            <input type="text" value="Monasteries, trekking, photography" />
+          </label>
+        </div>
+        <div class="planner-preview">
+          <h3>Instant itinerary preview</h3>
+          <p>Your AI assistant will shape a tailored route through Paro, Thimphu, Punakha, and central Bhutan with luxury stays and private transfers.</p>
+          <ul>
+            <li>Private airport arrival</li>
+            <li>Five-star boutique stays</li>
+            <li>Expert-led monastery visits</li>
+            <li>Flexible cultural add-ons</li>
+          </ul>
+          <a class="primary-btn" href="#contact">Generate My Itinerary</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences" class="experience-section">
+      <div class="section-heading">
+        <p class="eyebrow">Signature Experiences</p>
+        <h2>Journeys shaped for wonder, comfort, and meaning</h2>
+      </div>
+      <div class="card-grid">
+        <article class="experience-card">
+          <h3>Tiger’s Nest Trek</h3>
+          <p>Sunrise hikes, monastery views, and tailored pacing for every traveler.</p>
+        </article>
+        <article class="experience-card">
+          <h3>Cultural Tours</h3>
+          <p>Immersive encounters with dzongs, festivals, and local heritage.</p>
+        </article>
+        <article class="experience-card">
+          <h3>Honeymoon Escapes</h3>
+          <p>Private retreats with spa rituals, scenic lodges, and candlelit dinners.</p>
+        </article>
+        <article class="experience-card">
+          <h3>Family Holidays</h3>
+          <p>Easy logistics, gentle adventures, and spacious luxury stays.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="guide">
+      <div class="section-heading">
+        <p class="eyebrow">Travel Guide</p>
+        <h2>Everything you need before you fly</h2>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-card">Visa & Entry</div>
+        <div class="guide-card">Flights & Transfers</div>
+        <div class="guide-card">Currency & Payments</div>
+        <div class="guide-card">Packing & Weather</div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <p>Nomadifly • Crafting Extraordinary Bhutan Journeys</p>
+    <a href="mailto:hello@nomadifly.com">hello@nomadifly.com</a>
+  </footer>
+</div>

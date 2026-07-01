@@ -1,0 +1,515 @@
+.page-shell {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #faf9f6 0%, #f5efe2 100%);
+  color: #222222;
+  font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  // padding: 1.25rem 2rem;
+  background: #faf9f6;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(15, 61, 46, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #0f3d2e;
+  padding-left: 1rem;
+}
+
+.brand-logo {
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .brand-logo {
+    display: block;
+  }
+}
+
+/* Reduce header height and visually enlarge the logo without affecting layout */
+.topbar {
+  height: 52px;
+  min-height: 52px;
+  overflow: visible;
+  align-items: center;
+}
+
+.brand-logo {
+  /* keep layout small */
+  max-height: 40px;
+  width: auto;
+  /* visually enlarge without pushing layout */
+  transform: scale(1.6);
+  transform-origin: left center;
+}
+
+@media (min-width: 1024px) {
+  .brand-logo {
+    max-height: 48px;
+    transform: scale(1.8);
+  }
+}
+
+.brand strong,
+.brand small {
+  display: block;
+}
+
+.brand small {
+  color: #6e6a62;
+  font-size: 0.75rem;
+}
+
+.nav-links,
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem 1rem;
+}
+
+.nav-toggle {
+  display: none;
+  border: 1px solid rgba(15, 61, 46, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+  color: #0f3d2e;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links a,
+.icon-btn {
+  text-decoration: none;
+  color: #222222;
+  font-size: 0.95rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.plan-btn{
+  padding: 0.1rem 1rem !important;
+}
+.plan-btn,
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.plan-btn,
+.primary-btn {
+  background: #0f3d2e;
+  color: #faf9f6;
+  box-shadow: 0 8px 24px rgba(15, 61, 46, 0.18);
+}
+
+.secondary-btn {
+  border: 1px solid rgba(15, 61, 46, 0.14);
+  color: #0f3d2e;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.plan-btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero {
+  position: relative;
+  min-height: 88vh;
+  display: grid;
+  grid-template-columns: 1.7fr 0.6fr;
+  align-items: end;
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(120deg, rgba(15, 61, 46, 0.75), rgba(15, 61, 46, 0.3)), url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1400&q=80') center/cover;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.hero-content,
+.hero-stats {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 4.4vw, 4.7rem);
+  line-height: 1.05;
+  margin: 0.5rem 0 1rem;
+  max-width: 720px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.8rem;
+  color: #d4af37;
+}
+
+.hero-copy {
+  max-width: 640px;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.86);
+  margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.trust-row span {
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 0.88rem;
+}
+
+.hero-stats {
+  display: grid;
+  gap: 1rem;
+  justify-items: end;
+}
+
+.hero-stats div {
+  width: min(220px, 100%);
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  background: rgba(250, 249, 246, 0.16);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hero-stats strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.content-section {
+  padding: 4rem 2rem;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 0.3rem 0 0;
+}
+
+.about-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.2rem;
+}
+
+.about-copy,
+.about-card,
+.contact-card,
+.booking-card,
+.guide-card,
+.tour-card,
+.info-card,
+.experience-card,
+.destination-card {
+  padding: 1.2rem;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 16px 40px rgba(15, 61, 46, 0.08);
+}
+
+.about-copy p,
+.about-card p,
+.contact-card p,
+.tour-body p,
+.tour-body small,
+.guide-card,
+.info-card p,
+.experience-body p,
+.destination-body p {
+  color: #5f5a54;
+}
+
+.info-grid,
+.experience-grid,
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.tour-image,
+.experience-image,
+.destination-image {
+  height: 220px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.tour-image.monsoon {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://nomadifly.com/images/1776828006_thumb.png');
+}
+
+.tour-image.tshechu {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://nomadifly.com/images/1779181465_thumb.png');
+}
+
+.experience-image.tiger-nest {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80');
+}
+
+.experience-image.festival {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=80');
+}
+
+.experience-image.wellness {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80');
+}
+
+.destination-image.paro {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80');
+}
+
+.destination-image.thimphu {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?auto=format&fit=crop&w=900&q=80');
+}
+
+.destination-image.punakha {
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80');
+}
+
+.tour-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0.7rem 0 0.2rem;
+}
+
+.tour-price-row strong {
+  font-size: 1.2rem;
+}
+
+.tour-price-row span {
+  text-decoration: line-through;
+  color: #8e8a84;
+}
+
+.tour-body ul {
+  padding-left: 1rem;
+  color: #5f5a54;
+  margin: 0.6rem 0 1rem;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-card a,
+.social-links-inline a {
+  color: #0f3d2e;
+  text-decoration: none;
+}
+
+.booking-form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.booking-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: #2f2a24;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  border: 1px solid rgba(15, 61, 46, 0.14);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+  resize: vertical;
+}
+
+.social-links-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem 2.5rem;
+  color: #5f5a54;
+  border-top: 1px solid rgba(15, 61, 46, 0.08);
+}
+
+.footer a {
+  color: #0f3d2e;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .about-grid,
+  .contact-grid,
+  .tour-grid,
+  .guide-grid,
+  .info-grid,
+  .experience-grid,
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    justify-items: start;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1.1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: flex-start;
+  }
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    /* position toggle on the right side in mobile view */
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+    /* circular white background */
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(15, 61, 46, 0.12);
+    border: none;
+    font-size: 1.2rem;
+  }
+
+  .nav-actions {
+    order: 3;
+    flex-wrap: nowrap;
+    width: auto;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    order: 4;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-top: 1px solid rgba(15, 61, 46, 0.08);
+    background: rgba(250, 249, 246, 0.98);
+    z-index: 25;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .content-section {
+    padding: 3rem 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+}

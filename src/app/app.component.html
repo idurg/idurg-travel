@@ -1,0 +1,267 @@
+<div class="page-shell">
+  <header class="topbar">
+    <a class="brand" href="#">
+      <img class="brand-logo" src="f.png" alt="iDurg Travel logo" />
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" (click)="mobileMenuOpen = !mobileMenuOpen">
+      ☰
+    </button>
+    <nav class="nav-links" [class.open]="mobileMenuOpen" aria-label="Primary navigation">
+      <a href="#destinations" (click)="closeAndNavigate($event, 'destinations')">Destinations</a>
+      <a href="#experiences" (click)="closeAndNavigate($event, 'experiences')">Experiences</a>
+      <a href="#guide" (click)="closeAndNavigate($event, 'guide')">Travel Guide</a>
+      <a href="#contact" (click)="closeAndNavigate($event, 'contact')">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">⌕</button>
+      <button class="icon-btn" aria-label="Wishlist">♡</button>
+      <a class="plan-btn" href="#contact">Plan My Trip</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Luxury • Authentic • Tailored</p>
+        <h1>Experience Bhutan with the warmth of a local story.</h1>
+        <p class="hero-copy">
+          iDurg Travel creates personal Bhutan journeys that feel less like a checklist and more like traveling with close friends.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#tours">View Group Tours</a>
+          <a class="secondary-btn" href="#contact">Plan a Custom Journey</a>
+        </div>
+        <div class="trust-row" aria-label="Trusted by travelers">
+          <span>Local Bhutan Experts</span>
+          <span>Immersive Itineraries</span>
+          <span>Small Group Feel</span>
+          <span>24×7 Support</span>
+        </div>
+      </div>
+      <div class="hero-stats" aria-label="iDurg Travel highlights">
+        <div>
+          <strong>60+</strong>
+          <span>Countries explored by founders</span>
+        </div>
+        <div>
+          <strong>6N/7D</strong>
+          <span>Signature Bhutan escapes</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>Personalized attention</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section about-section">
+      <div class="section-heading">
+        <p class="eyebrow">About Us</p>
+        <h2>iDurg Travel is built around meaningful travel, not rushed sightseeing.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            iDurg Travel specializes in immersive Bhutan experiences designed to feel personal and welcoming. Every itinerary is thoughtfully customized to match your interests so you can explore the culture, discover hidden corners, and enjoy moments most travelers never get to see.
+          </p>
+          <p>
+            Founded by Deepanshu Sangwan and Anushia, iDurg Travel believes travel should change the way you see the world. Anushia, originally from Bhutan, brings a deep local perspective, while Deepanshu brings a global travel lens shaped by years of exploration.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Founders’ Story</h3>
+          <p>“The best souvenirs from travel are not things you buy, but experiences that stay with you for life.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-bhutan" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Why Bhutan</p>
+        <h2>Bhutan offers calm, culture, and a rare sense of stillness.</h2>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Gross National Happiness</h3>
+          <p>Bhutan measures progress through wellbeing, not just growth, creating a gentler pace of travel and life.</p>
+        </article>
+        <article class="info-card">
+          <h3>Living Culture</h3>
+          <p>From dzongs and monasteries to festivals and family-run stays, every corner feels rooted in tradition.</p>
+        </article>
+        <article class="info-card">
+          <h3>Untouched Landscapes</h3>
+          <p>Himalayan views, pine forests, river valleys, and quiet mountain roads make every journey cinematic.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiences" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Signature Experiences</p>
+        <h2>Immersive moments designed for connection, comfort, and wonder.</h2>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-image tiger-nest"></div>
+          <div class="experience-body">
+            <h3>Tiger’s Nest Trek</h3>
+            <p>Start before sunrise, walk through pine forests, and reach the monastery with panoramic Himalayan views.</p>
+          </div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-image festival"></div>
+          <div class="experience-body">
+            <h3>Festival & Culture Immersion</h3>
+            <p>Witness masked dances, local traditions, and celebrations that bring Bhutan’s heritage to life.</p>
+          </div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-image wellness"></div>
+          <div class="experience-body">
+            <h3>Wellness & Mountain Retreats</h3>
+            <p>Pause in scenic lodges, enjoy restorative rituals, and embrace a slower rhythm of travel.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="destinations" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Destinations</p>
+        <h2>Choose from the most memorable corners of Bhutan.</h2>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card">
+          <div class="destination-image paro"></div>
+          <div class="destination-body">
+            <h3>Paro</h3>
+            <p>Historic valleys, monastery views, and the iconic Tiger’s Nest experience.</p>
+          </div>
+        </article>
+        <article class="destination-card">
+          <div class="destination-image thimphu"></div>
+          <div class="destination-body">
+            <h3>Thimphu</h3>
+            <p>Modern capital meets spiritual heritage, with lively markets and refined dining.</p>
+          </div>
+        </article>
+        <article class="destination-card">
+          <div class="destination-image punakha"></div>
+          <div class="destination-body">
+            <h3>Punakha</h3>
+            <p>River valleys, grand dzongs, and a quieter, romantic atmosphere.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tours" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Upcoming Group Tours</p>
+        <h2>Join a small-group journey with expert hosts and carefully paced adventures.</h2>
+      </div>
+      <div class="tour-grid">
+        <article class="tour-card">
+          <div class="tour-image monsoon"></div>
+          <div class="tour-body">
+            <h3>Monsoon Escape Bhutan With .....</h3>
+            <p>24th July to 30th July • 6N/7D</p>
+            <div class="tour-price-row">
+              <strong>₹ 39,900</strong>
+              <span>₹ 42,000</span>
+            </div>
+            <small>Save ₹ 2,100</small>
+            <ul>
+              <li>Scenic monastery visits</li>
+              <li>Local food and cultural experiences</li>
+              <li>Comfortable stays and shared transport</li>
+            </ul>
+            <a class="primary-btn" href="https://nomadifly.com/tour_plan/monsoon-escape-bhutan-with-annu-sia" target="_blank" rel="noopener">Read Full Tour Plan</a>
+          </div>
+        </article>
+        <article class="tour-card">
+          <div class="tour-image tshechu"></div>
+          <div class="tour-body">
+            <h3>Bhutan Thimphu Tshechu With .....</h3>
+            <p>20th September to 26th September • 6N/7D</p>
+            <div class="tour-price-row">
+              <strong>₹ 39,900</strong>
+              <span>₹ 70,000</span>
+            </div>
+            <small>Save ₹ 30,100</small>
+            <ul>
+              <li>Festival-centered itinerary</li>
+              <li>Private city and monastery access</li>
+              <li>Thoughtful group size and pacing</li>
+            </ul>
+            <a class="primary-btn" href="https://nomadifly.com/tour_plan/bhutan-thimphu-tshechu-with-annu-sia" target="_blank" rel="noopener">Read Full Tour Plan</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="guide" class="content-section guide-section">
+      <div class="section-heading">
+        <p class="eyebrow">Travel Guide</p>
+        <h2>Helpful details before you fly.</h2>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-card">Visa & Entry</div>
+        <div class="guide-card">Flights & Transfers</div>
+        <div class="guide-card">Currency & Payments</div>
+        <div class="guide-card">Packing & Weather</div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact Us</p>
+        <h2>Let’s create a Bhutan trip that feels like yours.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="booking-card">
+          <h3>Book Your Journey</h3>
+          <form class="booking-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="Your email" />
+            </label>
+            <label>
+              Phone
+              <input type="tel" placeholder="Your phone" />
+            </label>
+            <label>
+              Message
+              <textarea rows="4" placeholder="Tell us about your dream Bhutan trip"></textarea>
+            </label>
+            <button class="primary-btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="contact-card">
+          <h3>Email Us</h3>
+          <a href="mailto:info&#64;idurgtravel.com">info&#64;idurgtravel.com</a>
+          <p>Monday – Friday: 9:30am to 6:30pm</p>
+          <p>Saturday: 9:30am to 1:30pm</p>
+          <p>Sunday: Closed</p>
+          <h3>Follow Us</h3>
+          <div class="social-links-inline">
+            <a href="https://www.instagram.com/nomadifly" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/share/1Aw7YAaPXV/" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://maps.app.goo.gl/fx1oyQaNd5DGA7XMA" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>iDurg Travel • Crafting Extraordinary Bhutan Journeys</p>
+    <a href="mailto:info&#64;idurgtarvel.com">info&#64;idurgtarvel.com</a>
+  </footer>
+</div>
