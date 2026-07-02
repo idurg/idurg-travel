@@ -147,7 +147,10 @@
   grid-template-columns: 1.7fr 0.6fr;
   align-items: end;
   padding: 4rem 2rem 2rem;
-  background: linear-gradient(120deg, rgba(15, 61, 46, 0.75), rgba(15, 61, 46, 0.3)), url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1400&q=80') center/cover;
+  // background: linear-gradient(120deg, rgba(15, 61, 46, 0.75), rgba(15, 61, 46, 0.3)), url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1400&q=80') center/cover;
+  background:
+  linear-gradient(120deg, rgba(15, 61, 46, 0.75), rgba(15, 61, 46, 0.3)),
+  url('/aa.png') center/cover;
   color: white;
 }
 
@@ -300,11 +303,11 @@
 }
 
 .tour-image.monsoon {
-  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://nomadifly.com/images/1776828006_thumb.png');
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('/as.png');
 }
 
 .tour-image.tshechu {
-  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('https://nomadifly.com/images/1779181465_thumb.png');
+  background-image: linear-gradient(135deg, rgba(15, 61, 46, 0.2), rgba(15, 61, 46, 0.05)), url('/bs.png');
 }
 
 .experience-image.tiger-nest {
